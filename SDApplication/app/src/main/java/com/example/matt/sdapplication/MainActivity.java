@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_basket) {
 
-            Intent myIntent = new Intent(this, Basket.class);
+            Intent myIntent = new Intent(MainActivity.this, Basket.class);
             startActivity(myIntent);
 
 
