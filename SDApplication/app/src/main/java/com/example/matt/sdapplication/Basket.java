@@ -36,12 +36,15 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-        }
+        }*/
+        Intent myIntent = new Intent(Basket.this, MainActivity.class);
+        startActivity(myIntent);
+
     }
 
     @Override
@@ -60,10 +63,6 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_basket) {
-
-            Intent myIntent = new Intent(this, Basket.class);
-            startActivity(myIntent);
-
 
         } else if (id == R.id.action_saveForLater) {
 
