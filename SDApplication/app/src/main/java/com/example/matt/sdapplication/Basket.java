@@ -1,7 +1,9 @@
 package com.example.matt.sdapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -15,8 +17,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Toast;
+
+import java.io.File;
 
 public class Basket extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +33,19 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
         setSupportActionBar(toolbar);
 
         WebView wv = (WebView) findViewById(R.id.webview);
-        wv.loadUrl("file:///android_asset/myweb.html");
+        wv.setWebViewClient(new WebViewClient());
+
+
+        wv.loadUrl("https://s3-eu-west-1.amazonaws.com/sdghs-ecomm-aws-ctl/ecommdesign/JF/hack/checkout-1.html");
         wv.getSettings().setJavaScriptEnabled(true);
+
+
+
+
+
+
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -48,8 +67,7 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
         } else {
             super.onBackPressed();
         }
-        Intent myIntent = new Intent(Basket.this, MainActivity.class);
-        startActivity(myIntent);
+
 
     }
 
@@ -69,6 +87,7 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_basket) {
+            //CODE HERE FOR MOVING TO SECOND WEBVIEW/BASKET2
 
         } else if (id == R.id.action_saveForLater) {
 
