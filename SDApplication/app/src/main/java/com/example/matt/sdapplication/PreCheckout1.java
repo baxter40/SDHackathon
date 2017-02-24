@@ -42,6 +42,13 @@ public class PreCheckout1 extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
 
+
+        WebView wv3 = (WebView) findViewById(R.id.webview3);
+        wv3.setWebViewClient(new WebViewClient());
+        wv3.loadUrl("https://s3-eu-west-1.amazonaws.com/sdghs-ecomm-aws-ctl/ecommdesign/JF/hack/basket-1.html");
+        wv3.getSettings().setJavaScriptEnabled(true);
+
+
     }
 
     @Override
