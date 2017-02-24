@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 
 public class Basket extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     @Override
@@ -23,25 +24,29 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);/*
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);*/
+        navigationView.setNavigationItemSelectedListener(this);
 
+        WebView wv = (WebView) findViewById(R.id.webview);
+        wv.loadUrl("file:///android_asset/myweb.html");
+        wv.getSettings().setJavaScriptEnabled(true);
+        wv.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
     }
 
     @Override
     public void onBackPressed() {
-        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-        }*/
+        }
         Intent myIntent = new Intent(Basket.this, MainActivity.class);
         startActivity(myIntent);
 
