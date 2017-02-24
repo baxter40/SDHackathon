@@ -27,6 +27,14 @@
         <activity
             android:name=".Basket2"
             android:label="Checkout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreCheckout1"
+            android:label="@string/title_activity_pre_checkout1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreCheckout2"
+            android:label="@string/title_activity_pre_checkout2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

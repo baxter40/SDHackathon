@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">My Items</div>
+			<a class="card-headerLink">View details</a>
+		</div>
+		<div class="item-list">
+			<div class="item">
+				<img class="item-img" src="Pasted image at 2017_02_23 01_13 PM.png"> 
+			</div>
+			<div class="item">
+				<img class="item-img" src="Pasted image at 2017_02_23 01_14 PM (3).png"> 
+			</div>
+			<div class="item">
+				<img class="item-img" src="Pasted image at 2017_02_23 01_14 PM.png"> 
+			</div>
+			<div class="item">
+				<img class="item-img" src="Pasted image at 2017_02_23 01_15 PM.png"> 
+			</div>
+		</div>
+		<div class="card-footer header-footer" id="header">
+			<div class="card-footerRow">
+				<div class="item-listCount">4 Items</div>			
+				<div class="item-totalPrice">£135.02</div>
+			</div>
+			<div class="card-footerRow">
+				<div class="delivery-title">Delivery</div>
+				<div class="delivery-cost" id="deliveryCost">£3.99</div>
+			</div>
+			
+		</div>
+
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Delivery</div>
+			<a class="card-headerLink">Multiple addresses</a>
+		</div>
+		<div class="icon-wrap icon-wrap--home">
+			<div class="card-subtitle">Home Address</div>
+			<div class="card-text">
+				172 Jordan Street, Aigburth<br>
+				Liverpool<br>
+				Merseyside<br>
+				L17 8UY
+			</div>
+			<a class="card-actionLink">Change delivery address</a>
+		</div>
+		<div class="icon-wrap icon-wrap--shield">
+			<div class="card-subtitle">In case your not home</div>
+			<div class="card-text">
+				We'll leave your itme(s) with your neighbour at number <b>'174'</b>
+			</div>
+			<a class="card-actionLink">Amend safe place instructions</a>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Delivery options</div>
+		</div>
+		<div class="infobox">
+			You will recieve you itesm on or before <br>
+			<b>Saturday 25th February</b>
+		</div>
+		<div class="checkbox-list">
+			<label class="icon-wrap checkbox-label checkbox-label--standard" for="standardDelivery">
+				<input type="radio" class="checkbox" name="delivery" id="standardDelivery" value="sd" />
+				<div class="checkbox-labelTitle">Standard Delivery (£3.99)</div>
+				<div class="card-subtext checkbox-labelTex">Items will be delivered to you home or selected address</div>
+			</label>
+			<label class="icon-wrap checkbox-label checkbox-label--collectplus" for="collectPlus">
+				<input type="radio" class="checkbox" name="delivery" id="collectPlus" value="cp" />
+				<div class="checkbox-labelTitle">Click &amp; Collect (Free!)</div>
+				<div id="collectPlusChoose">
+					<div class="card-subtext checkbox-labelText">Get you items delivered to a local store and collect at your convenience.
+						<a class="card-actionLink">Learn more</a>
+					</div>
+					
+				</div>
+				<div id="collectPlusAddress">
+					<div class="card-subtext checkbox-labelText">
+						Your selected store. 
+						<div class="card-text address-chosen">
+							Vogan Mini Mart<br>
+							Liverpool<br>
+							Merseyside<br>
+							L17 8UY
+						</div>
+						<a class="card-actionLink">Change location</a>
+					</div>
+						
+
+				</div>
+				
+			</label>
+			<input type="button" class="btn btn-sec collectPlus-btn" value="Select Location" id="collectPlusBtn">
+		</div>
+		<div class="infobox" id="collectPlusInfo">
+			Please ensure you bring a form of identification with you when collecting.
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Promotions &amp; Gift Vouchers</div>
+		</div>
+		<div class="icon-wrap icon-wrap--promo">
+			<div class="card-subtitle">Promo Codes &amp; Gift Vouchers</div>
+			<div class="card-subtext">Please enter any of your codes below.</div>
+			<div class=promo>
+				<input type="text" class="promo-input" />
+				<input type="button" class="btn btn-sec promo-btn" value="Apply" />
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Payment</div>
+		</div>
+		<div class="icon-wrap icon-wrap--bnpl">
+			<div class="card-subtitle">Buy Now Pay Later</div>
+			<div class="card-subtext">
+				Buy now and pay nothing for up to 12 months!
+				<div class="bnpl-list">
+					<div class="bnpl-item">Interest free period starts today!</div>
+					<div class="bnpl-item">Simply pay off what you want when you want before the period ends.</div>
+				</div>
+			</div>
+			<div class="checkbox-list-inline">
+				<label class="checkbox-label" for="bnpl6">
+					<input type="radio" class="checkbox" name="delivery" id="bnpl6"/>
+					<div class="checkbox-labelTitle">6 Months</div>					
+				</label>
+				<label class="checkbox-label" for="bnpl12">
+					<input type="radio" class="checkbox" name="delivery" id="bnpl12"/>
+					<div class="checkbox-labelTitle">12 Months</div>
+				</label>
+			</div>
+			<a class="card-actionLink">Learn more</a>
+		</div>
+		<input type="button" class="btn btn-pri addToAccount-btn" value="Add to account" />
+		<div class="icon-wrap icon-wrap--cardpayment">
+			<div class="card-subtitle">Pay with card</div>
+			<div class="cardpayment-subtitle">Primary account holder card</div>
+			<div class="icon-wrap icon-wrap--bankcard">
+				<div class="cardpayment-details">
+					VISA (8776)<br>
+					Exp: 12/17<br>
+					Mrs J Smith
+				</div>
+				<div class="cardpayment-footer">
+					<a class="card-actionLink cardpayment-anothercard">Add or use another card</a>
+					<div class="cardpayment-cvv">
+						<input class="cardpayment-cvv-input" type="text" placeholder="CVV">
+						<div class="cardpayment-cvv-icon">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="infobox infobox-grey">
+			<div class="card-subtitle">We accept</div>
+			<div class="cardpayment-cardsAccepted"></div>
+		</div>		
+		<input type="button" class="btn btn-sec paynow-btn" value="Pay with card">
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

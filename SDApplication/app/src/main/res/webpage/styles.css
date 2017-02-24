@@ -1,0 +1,436 @@
+body {
+	background-color:#f5f5f5;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+    padding:0 0 80px 0;
+    margin:0;
+}
+
+.modal-content>img {max-width: 100%;}
+.modal-content {padding:0!important;}
+
+.card {
+	margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-white {background: #fff;}
+
+.card-header {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-headerLink {
+    float: right;
+    color:#de007b;
+    margin-top: 5px;
+}
+
+.card-subtitle {
+    font-weight: bold;
+    font-size:16px;
+    margin-bottom: 10px;
+    color:#000;
+}
+
+.card-text {
+    line-height: 1.3;
+}
+
+.card-subtext {
+    color:#BABDC2;
+}
+
+.header-footer {
+    overflow: hidden;
+    width: 100%;
+    border-top: 2px solid #D8D8D8;
+    padding-top: 15px;
+}
+
+.header-footer--fixed {
+    border-color: transparent;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-bottom:20px;
+    padding:15px 20px 20px 20px;
+    background:#fff;
+    box-sizing: border-box;
+    z-index: 2;
+    box-shadow: 0 2px 8px 0 #afafaf;
+}
+
+.card-footerRow {
+    overflow: hidden;
+}
+
+.delivery-title {color:#a2a2a2;margin-top:8px;float:left;}
+.delivery-cost {color:#a2a2a2;margin-top:8px;float: right}
+
+.card-actionLink {
+	color:#de007b;
+    margin-top: 15px;
+    display: block;
+    clear: both;
+}
+
+.btn {
+    display: block;
+    -webkit-appearance:none;
+    font-size:17px;
+    font-weight: 600;
+    color:#fff;
+    line-height: 1;
+    padding-top:15px;
+    padding-bottom:16px;
+    border-width:0 0 2px 0;
+    border-style: solid;
+    width:100%;
+    text-align: center;
+}
+
+.btn-pri {
+    background-color: #0bb954;
+    border-color: #0a9043;
+}
+
+.btn-sec {
+    background-color:#3498db;
+    border-color: #2e71bf;
+}
+
+.item-list {
+    overflow: hidden;
+    margin-right: -10px;
+    padding-bottom: 15px;
+}
+
+.item {
+    float: left;
+    margin-right: 7px;
+}
+
+.item-img {
+    border: 1px solid #D8D8D8;
+    width: 73px;
+    height: 100px;
+    display: block;
+}
+
+.item-listCount {
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.item-totalPrice {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.icon-wrap {
+    padding-left: 44px;
+    position: relative;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #D8D8D8;
+    padding-bottom: 15px;
+    margin-top:4px;
+}
+
+.icon-wrap:last-child {
+    border:0;
+    padding-bottom: 0;
+}
+.icon-wrap:first-child {margin-top:0;}
+
+.icon-wrap:before {
+    content:'';
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    position: absolute;
+    left:0px;
+    top: -10px;
+    background-color: #f5f5f5;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-wrap--home:before {    
+    background-image:url(ic_home_black_48px.svg);
+}
+
+.icon-wrap--shield:before {
+    background-image:url(ic_verified_user_black_48px.svg);
+}
+
+.icon-wrap--promo:before {
+    background-image:url(ic_local_offer_black_48px.svg);
+}
+
+.icon-wrap.icon-wrap--bankcard:before {
+    background-image:url(visa.png);
+    background-color: transparent;
+    background-size: contain;
+    border-radius: 0;
+    top:-8px;
+}
+.icon-wrap.icon-wrap--cardpayment {border-bottom:0;padding-bottom: 0;}
+.icon-wrap.icon-wrap--cardpayment:before {
+    background-image:url(ic_credit_card_black_48px.svg);
+}
+
+.icon-wrap--bnpl:before {
+    background-image:url(bnpl.svg);
+}
+
+.infobox {
+    margin-left:-20px;
+    margin-right:-20px;
+    background-color:#EAF4FF;
+    color:#7AA6D5;
+    padding:15px 20px 15px 60px;
+    margin-bottom: 25px;
+}
+
+.infobox:not(.infobox-grey):before {
+    content:'';
+    display:block;
+    width:24px;
+    height:24px;
+    background:url(ic_info_48px.svg);
+    background-size: contain;
+    position: absolute;
+    left:25px;
+}
+
+.infobox-grey {
+    background-color: #f2f2f2;
+    padding-left:20px;
+    padding-bottom:30px;
+}
+
+input[type=text] {
+    border:1px solid #d9d9d9;
+    font-size: 14px;
+    padding:16px 0;
+    
+}
+
+.checkbox {
+    float: right;
+    display: block;
+    width:24px;
+    height:24px;
+    position: relative;
+    -webkit-appearance:none;
+    outline:0;
+    position: absolute;
+    right:0;
+}
+
+.checkbox:after {
+    content:'';
+    display: block;
+    width:24px;
+    height:24px;
+    border:1px solid #979797;
+    border-radius: 2px;
+}
+
+.checkbox:checked:after {
+    background-color: #f0ffe0;
+    width:22px;
+    height:22px;
+    border: solid 2px #8ac34b;
+    background:url(tick-svg.svg) no-repeat center;
+    background-size: 18px auto;
+}
+
+.checkbox-list {
+}
+
+.checkbox-label {
+    position: relative;
+    margin-top: 15px;
+    overflow: hidden;
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+    padding-right:45px;
+    padding-top: 20px;
+}
+
+.checkbox-label:before {
+    top:10px;
+}
+
+.checkbox-label--standard:before {
+    background-image:url(ic_local_shipping_black_48px.svg);
+}
+.checkbox-label--collectplus:before {
+    background-image:url(click-collect.png);
+}
+
+#collectPlusAddress,
+#collectPlusInfo {display: none;}
+.checkbox-label--collectplus {border-bottom:0;}
+
+.address-chosen {color:#000;font-weight: 600;line-height: 1.5;margin-top:11px;}
+
+.checkbox-labelTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkbox-labelText {
+    color:#BABDC2;
+    overflow: hidden;
+}
+
+.collectPlus-btn {
+    margin-top:20px;
+    display: none;
+    clear: both;
+}
+
+.collectPlus-btn--show {
+    display: block;
+}
+
+.promo {
+}
+
+.promo-input {
+    margin-top:15px;
+    width:calc(100% - 115px);
+    text-indent: 10px;
+    outline:0;
+}
+
+.promo-btn {
+    float: right;
+    margin-top:15px;
+    width:105px;
+}
+
+.bnpl-list {
+    margin:15px 0;
+}
+
+.bnpl-item {
+    padding-left:30px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.bnpl-item:before {
+    content:'';
+    width:17px;
+    height: 14px;
+    background:url(tick-svg.svg) no-repeat center center;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    left: 0;
+
+}
+
+.addToAccount-btn {
+    margin-bottom:40px;
+}
+
+.checkbox-list-inline {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.checkbox-list-inline .checkbox {
+    float:left;
+    position: static;
+    margin-right: 8px;
+}
+
+.checkbox-list-inline .checkbox-label {
+    display: block;
+    width: auto;
+    margin-right: 15px;
+    float: left;
+    position: static;
+    padding-right: 0;
+}
+
+.checkbox-list-inline .checkbox-labelTitle {
+    float: left;
+    margin-top:6px;
+}
+
+.bnpl-btn {
+    width:105px;
+}
+
+.cardpayment-subtitle {
+    margin-bottom:15px;
+    font-weight: bold;
+}
+
+.cardpayment-details {
+    line-height: 1.5;
+}
+
+.cardpayment-footer {
+    overflow: hidden;
+}
+
+.cardpayment-anothercard {
+    float:right;
+    margin-top:7px;
+}
+
+.cardpayment-cvv {
+    width:85px;
+    position: relative;
+}
+
+input.cardpayment-cvv-input {
+    width:100%;
+    padding:6px 0;
+    text-indent: 5px;
+}
+
+.cardpayment-cvv-icon {
+    position: absolute;
+    right:5px;
+    top:5px;
+    width:30px;
+    height: 20px;
+    background: url(CVV.svg) no-repeat;
+    background-size: contain;
+}
+
+.cardpayment-cardsAccepted {
+    height:25px;
+    background:url(cards.png) no-repeat;
+    background-size: contain;
+}
+
+.paynow-btn {margin-top:25px;}

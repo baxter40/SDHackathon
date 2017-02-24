@@ -7,4 +7,6 @@
     <string name="action_basket">Settings</string>
     <string name="title_activity_basket1">basket1</string>
     <string name="title_activity_basket2">Basket2</string>
+    <string name="title_activity_pre_checkout1">PreCheckout1</string>
+    <string name="title_activity_pre_checkout2">PreCheckout2</string>
 </resources>
