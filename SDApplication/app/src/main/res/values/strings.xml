@@ -6,4 +6,5 @@
 
     <string name="action_basket">Settings</string>
     <string name="title_activity_basket1">basket1</string>
+    <string name="title_activity_basket2">Basket2</string>
 </resources>

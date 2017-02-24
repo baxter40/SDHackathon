@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.matt.sdapplication"
-    >
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.example.matt.sdapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/verylogo"
@@ -21,9 +22,12 @@
         </activity>
         <activity
             android:name=".Basket"
-            android:label="Basket"
+            android:label="Checkout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Basket2"
+            android:label="Checkout"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
     </application>
 
 </manifest>

@@ -22,29 +22,20 @@ import android.widget.Toast;
 
 import java.io.File;
 
-public class Basket extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Basket2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basket1);
+        setContentView(R.layout.activity_basket2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        WebView wv = (WebView) findViewById(R.id.webview);
-        wv.setWebViewClient(new WebViewClient());
-
-
-        wv.loadUrl("https://s3-eu-west-1.amazonaws.com/sdghs-ecomm-aws-ctl/ecommdesign/JF/hack/checkout-1.html");
-        wv.getSettings().setJavaScriptEnabled(true);
-
-
-
-
-
-
-
+        WebView wv2 = (WebView) findViewById(R.id.webview2);
+        wv2.setWebViewClient(new WebViewClient());
+        wv2.loadUrl("https://s3-eu-west-1.amazonaws.com/sdghs-ecomm-aws-ctl/ecommdesign/JF/hack/checkout-2.html");
+        wv2.getSettings().setJavaScriptEnabled(true);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -87,8 +78,7 @@ public class Basket extends AppCompatActivity implements NavigationView.OnNaviga
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_basket) {
-            Intent intent = new Intent(Basket.this, Basket2.class);
-            startActivity(intent);
+            //CODE HERE FOR MOVING TO SECOND WEBVIEW/BASKET2
 
         } else if (id == R.id.action_saveForLater) {
 
