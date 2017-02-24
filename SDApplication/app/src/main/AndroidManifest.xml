@@ -30,11 +30,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PreCheckout1"
-            android:label="@string/title_activity_pre_checkout1"
+            android:label="Basket"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PreCheckout2"
-            android:label="@string/title_activity_pre_checkout2"
+            android:label="Basket"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
